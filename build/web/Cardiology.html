@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /*all starts*/
+      .follow {
+
+color: #fff !important;
+font-size: 14px;
+line-height: 20px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+margin-right: 4px;
+}
+
+.fa {
+
+font-size: 14px;
+
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+margin: 5px;
+margin-left: 8px;
+
+}
+
+.Privacypolicy {
+color: #fff !important;
+font-size: 14px;
+line-height: 20px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+margin-right: 0px;
+margin-left: 75px;
+}
+
+.Askspan {
+color: #fff !important;
+font-size: 14px;
+line-height: 20px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+margin-left: -19px;
+}
+
+.Disclamer {
+color: #fff !important;
+font-size: 14px;
+line-height: 20px;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bolder;
+margin-left: -19px;
+}
+
+/* Add a hover effect if you want */
+/* .fa:hover {
+opacity: ;
+} */
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+background: #007C9D;
+color: #fff;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #007C9D;
+color: #fff;
+}
+
+.fa-instagram {
+background: #007C9D;
+color: #fff;
+}
+
+.fa-linkedin {
+background: #007C9D;
+color: #fff;
+}
+
+.fa-youtube {
+background: #007C9D;
+color: #fff;
+}
+
+.btnlogin {
+border-color: #007C9D;
+color: #ffffff;
+font-size: 14px;
+width: 120px;
+/* padding: 3% 2% 3% 2%; */
+border-radius: 9px;
+/* margin-left: 61%; */
+margin-left: -1.2%;
+line-height: 20px;
+font-family: 'Times New Roman', Times, serif;
+background: linear-gradient(to bottom right, #007291, #07394a);
+}
+
+.btnlogin:hover {
+
+border-color: goldenrod;
+}
+
+.navbar navbar-expand-lg navbar-light bg-light {
+position: sticky;
+top: 10px;
+}
+
+.nav-item {
+font-size: large;
+
+}
+
+.navbar-brand {
+background-color: white;
+}
+
+.carousel-inner {
+height: 500px;
+}
+
+.cardnearslider img {
+
+width: 42px;
+padding-top: 25px;
+
+}
+
+.cardnearslider {
+text-align: center;
+background: #fff;
+box-shadow: 6px 6px 70px rgb(16 40 81 / 23%);
+padding: 16px 12px;
+height: 156px;
+width: 180px;
+border-radius: 15px;
+margin-top: 2%;
+margin-left: 16%;
+text-decoration: none;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+float: left;
+}
+
+.cardnearslider h5 {
+font-size: 15px;
+font-weight: 600;
+line-height: 1.6;
+padding-top: 16px;
+margin: 0px;
+color: #161616;
+text-decoration: none;
+}
+
+.cardnearslider:hover {
+cursor: pointer;
+border-color: #01C9C9 !important;
+background: transparent linear-gradient(281deg, #007C9D 0%, #01C9C9 100%) 0% 0% no-repeat;
+text-decoration: none;
+}
+
+a h5:hover {
+color: whitesmoke;
+text-decoration: none;
+}
+
+.bar {
+width: 80%;
+height: 60px;
+background-color: #ECFBFE;
+margin-left: 10%;
+margin-bottom: 10%;
+}
+
+.bar h5 {
+font-size: 30px;
+font-weight: 600;
+line-height: 1.6;
+padding-top: 16px;
+padding-left: 43%;
+padding-top: 10px;
+color: #007C9D;
+}
+
+.bar h5:hover {
+
+cursor: pointer;
+color: #FFD700;
+
+}
+
+.excellenceheading {
+
+color: #161616;
+font-weight: 800;
+margin-top: 2%;
+margin-left: 24%;
+}
+
+.excellencesub {
+padding-left: 32%;
+font-size: 19px;
+font-weight: 500
+}
+
+.spimage img {
+border-radius: 2%;
+margin-left: 6%;
+height: 700px;
+margin-top: -4%;
+float: left;
+
+}
+
+.specialityinHosp {
+text-align: center;
+background: #fff;
+padding: 16px 12px;
+height: 125px;
+width: 148px;
+border-radius: 12px;
+margin-top: -4%;
+margin-left: 2%;
+margin-bottom: 5.7%;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+align-items: center;
+float: left;
+box-shadow: 6px 6px 70px rgb(16 40 81 / 10%);
+border: 1px solid #fff;
+background: #fff;
+
+
+}
+
+.specialityinHosp img {
+font-size: 12px;
+width: 42px;
+padding-top: 15px;
+
+}
+
+.specialityinHosp h5 {
+font-size: 14px;
+font-weight: 500;
+line-height: 1.6;
+padding-top: 8px;
+margin: 0px;
+color: #161616;
+}
+
+.specialityinHosp:hover {
+border: 1px solid #ffb500;
+text-decoration: none;
+
+}
+
+.specialityinHosp h5:hover {
+
+color: black;
+text-decoration: none;
+}
+
+
+.chooseHeading h2 {
+color: #161616;
+font-weight: bolder;
+font-family: Franklin Gothic Demi Cond;
+text-decoration: none;
+
+}
+
+
+.whyimg img {
+border-radius: 2%;
+margin-top: 4%;
+margin-left: 75%;
+height: 500px;
+float: left;
+}
+
+.jumbotron {
+
+margin-top: 44%;
+background-color: #ECFBFE;
+
+
+}
+
+.whyheading h2 {
+font-weight: 800;
+margin-left: -10%;
+
+}
+
+.whyheading p {
+word-break: break-all;
+font-size: 16px;
+line-height: 32px;
+margin-left: -10%;
+padding-top: 12px;
+padding-right: 35%;
+color: #464b4c;
+word-break: break-all;
+}
+
+.whyimage img {
+
+height: 610px;
+border-radius: 16px;
+margin-top: -55%;
+margin-left: 72%;
+float: left;
+}
+
+.whysmall img {
+
+margin-top: -40%;
+margin-left: -6%;
+margin-right: 102%;
+width: 88px;
+height: 85px;
+padding: 12px;
+background-color: #fff;
+box-shadow: 0px 0px 30px #bed9e0;
+border-radius: 9px;
+align-items: center;
+vertical-align: middle;
+float: right;
+}
+
+.value {
+
+color: #007C9D;
+font-weight: 900;
+font-size: 29px;
+
+}
+
+.textnearby h4 {
+
+margin-left: 15%;
+margin-bottom: 40%;
+}
+
+.whylist {
+word-break: break-all;
+font-size: 16px;
+line-height: 32px;
+margin-left: -10%;
+padding-top: 12px;
+padding-right: 35%;
+color: #464b4c;
+word-break: break-all;
+}
+
+.bar1 {
+width: 100%;
+height: 60px;
+background-color: #ECFBFE;
+margin-left: 0%;
+margin-bottom: 0%;
+}
+
+.bar1 h1 {
+font-size: 38px;
+font-weight: 600;
+line-height: 1.8;
+padding-top: 2px;
+/* padding-left: %; */
+/* padding-top: 10px; */
+color: #007C9D;
+}
+
+.clinicalservices {
+margin-top: -2%;
+}
+
+.headclinic {
+margin-left: 5%;
+display: inline;
+
+}
+
+.paraclinic {
+word-break: break-all;
+margin-left: 5%;
+
+}
+
+ul {
+margin: 0px;
+padding: 0px;
+}
+
+.footer-section {
+background: #0a2351;
+position: relative;
+}
+
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+
+.footer-content {
+position: relative;
+z-index: 2;
+}
+
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+
+.footer-logo {
+margin-bottom: 30px;
+}
+
+.footer-logo img {
+max-width: 200px;
+}
+
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+color: #7e7e7e;
+line-height: 28px;
+}
+
+/* .footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+} */
+
+/* .footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+} */
+
+.facebook-bg {
+background: #3B5998;
+}
+
+.twitter-bg {
+background: #55ACEE;
+}
+
+.google-bg {
+background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+color: #ff5e14;
+}
+
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: white;
+border: 1px solid #2E2E2E;
+color: black;
+}
+
+.subscribe-form button {
+position: absolute;
+right: 0;
+background: #ff5e14;
+padding: 13px 20px;
+border: 1px solid #ff5e14;
+top: 0;
+}
+
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+
+.copyright-area {
+background: #202020;
+padding: 25px 0;
+}
+
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+
+.copyright-text p a {
+color: #ff5e14;
+}
+
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+color: #ff5e14;
+}
+
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+background-color: #ccc;
+}
+
+.panel {
+padding: 0 18px;
+display: none;
+background-color: white;
+overflow: hidden;
+}
+
+      /*all end*/
+        .navbar navbar-expand-lg navbar-light bg-light {
+          position: sticky;
+          top: 10px;
+        }
+    
+        .nav-item {
+          font-size: large;
+    
+        }
+    
+        .navbar-brand {
+          background-color: white;
+        }
+    
+        .carousel-inner {
+          height: 500px;
+        }
+    
+        .cardnearslider img {
+    
+          width: 42px;
+          padding-top: 25px;
+    
+        }
+    
+        .cardnearslider {
+          text-align: center;
+          background: #fff;
+          box-shadow: 6px 6px 70px rgb(16 40 81 / 23%);
+          padding: 16px 12px;
+          height: 156px;
+          width: 180px;
+          border-radius: 15px;
+          margin-top: 2%;
+          margin-left: 5%;
+          text-decoration: none;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          float: left;
+        }
+    
+        .cardnearslider h5 {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 1.6;
+          padding-top: 16px;
+          margin: 0px;
+          color: #161616;
+          text-decoration: none;
+        }
+    
+        .cardnearslider:hover {
+          cursor: pointer;
+          border-color: #01C9C9 !important;
+          background: transparent linear-gradient(281deg, #007C9D 0%, #01C9C9 100%) 0% 0% no-repeat;
+          text-decoration: none;
+        }
+
+        .jain{
+            width: 711px;
+            height:350px;
+            border: 1px solid white;
+            margin-left: 6%;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 3px 3px 19px rgb(16 40 81 / 20%) !important;
+            
+        }
+        .drphoto img{
+
+            width: 120px;
+            height: 120px;
+            
+           margin-left: 2%;
+           margin-top: 3%;
+           border-radius: 50%;
+           margin-bottom: 10%;
+           margin-right: 0%;
+           padding-right: 0%;
+           display: inline;
+           float: left;
+           cursor: pointer;
+            
+        }
+
+        .drname{
+            font-size: 16px;
+            margin-left: 14%;
+            margin-top: 4%;
+            margin-bottom: 0%;
+
+        }
+
+        .Divdrname{
+            font-size: 13px;
+        
+            margin-bottom: 0%;
+           
+        }
+        .Regnumval{
+            font-size: 13px;
+            font-weight: 500;
+            margin-left: 2%;
+        }
+        .medqualification{
+            color: #7a7f89;
+        }
+        .location{
+            margin-left: 19.5%;
+        }
+        .cardfooter{
+
+            margin-right: 50%;
+            margin-left: 5%;
+            position: relative;
+            font-weight: 700;
+            font-size: 10px;
+        }
+        .cardfooter h6{
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .drtimings{
+            color: #ed803a;
+            font-size: 11px;
+            overflow: hidden;
+            line-height: 1.4;
+        }
+        .cardbtn{
+
+            margin-left: 40%;
+            margin-top:-7%;
+        }
+        .siddharthappointmentbutton{
+            border-color: #007C9D;
+            color: #ffffff;
+            font-size: 15px;
+            width: 240px;
+            padding: 3% 2% 3% 2%;
+            border-radius: 9px;
+            margin-top: 2%;
+            background: linear-gradient(to bottom right,#007291,#07394a);
+        }
+        .siddharthreadmore{
+            border-color: #007C9D;
+            color: #ffffff;
+            font-size: 15px;
+            width: 150px;
+            padding: 3% 2% 3% 2%;
+            border-radius: 9px;
+            margin-left: 61%;
+            background: linear-gradient(to bottom right,#007291,#07394a);
+
+        }
+        .sharma{
+            width: 711px;
+            height:350px;
+            border: 1px solid white;
+            margin-left: 107%;
+            margin-top: -46.2%;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 3px 3px 19px rgb(16 40 81 / 30%) !important;
+            
+        }
+        .Trivedi{
+            width: 711px;
+            height:350px;
+            border: 1px solid white;
+            margin-left:-107%;
+            margin-top: 8%;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 3px 3px 19px rgb(16 40 81 / 20%) !important;
+            
+        }
+        .Mishra{
+            width: 711px;
+            height:350px;
+            border: 1px solid white;
+            margin-left: 107%;
+            margin-top: -46.2%;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 3px 3px 19px rgb(16 40 81 / 30%) !important;
+        }
+        .watermarkspan{
+            width: 121px;
+            height: 131px;
+            position: absolute;
+            margin-left: 64%;
+            margin-top: -11.4%;
+        }
+        .hrr{
+            margin-left: 4%; margin-right: 4%;
+        }
+ 
+
+        </style>
+</head>
+<body>
+ 
+  <!-- Top header -->
+  <div id="header" style="background-color:#007C9D;">
+    <hr>
+
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="follow">Follow us on social media</span>
+    <span class="socialmediaicon">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    <a class="Privacypolicy" href="">
+      <span style="color: white;">
+        Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;|
+      </span>
+    </a>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <a class="Disclamer">
+      <span style="color: white"> Disclamer &nbsp;&nbsp;&nbsp;&nbsp;| </span>
+    </a>
+
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <a href="">
+      <button id="loginbutton" class="btnlogin">Login/Signup?</button>
+    </a>
+    &nbsp;&nbsp;
+    &nbsp;&nbsp;
+
+
+    <br><br>
+  </div>
+
+  </div>
+  <br>
+  <!-- Top header -->
+  <!-- Second header -->
+
+  <div id="header02">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: #666;"> &#10003</span>
+    <span style="color: #4b4141">Medical Emergency</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: #666;">&#128666;</span>
+    <span style="color: #666;">ICU on Wheels</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: #666;"> &#x1FA78;
+    </span>
+    <span style="color: #5a5a5a;">Blood Bank</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>
+      &#128222; </span>
+    <span style="color: #5a5a5a;"> &nbsp;Pharmacy</span> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: #5a5a5a;">0731-4733251</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: #666;">0731-4733260</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    <span style="color: #666;">0731-4733252</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: #666;">0731-4733269</span>
+    <hr style="color: #6e222e;">
+
+    <!-- Second header end -->
+
+  </div>
+
+  <!-- navbar start-->
+  <!-- Just an image -->
+
+  <div>
+    <!-- <nav class="navbar navbar-light bg-light">
+    
+  </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.htm">
+        <img src="/Hospital LOGO1crop.png" height="80px" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.htm" style="background-color: #fff;">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Vision.html">Vision</a>
+              <a class="dropdown-item" href="#">Founders</a>
+
+            </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Hospital Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="clinicalservices.htmlical">Our Scope Of Services</a>
+                <a class="dropdown-item" href="index.jsp">Departments</a>
+              <a class="dropdown-item" href="Mediclaims.html">Empanelments</a>
+              <a class="dropdown-item" href="Mediclaims.html">Cashless Mediclam Facility</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Patient Care
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#speciality">Find a Doctor </a>
+              <a class="dropdown-item" href="assuredsurgeryprice.html">SPAN Surgery-Assured Price </a>
+              <a class="dropdown-item" href="serviceexcellence.html"> Service Excellence </a>
+              <a class="dropdown-item" href="Patient testimonials.html">Patient Testimonials </a>
+              <!--<a class="dropdown-item" href="#">Value added services </a>-->
+
+              
+             
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Centres of Excellence
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Cardiology.html">Cardiology</a>
+              <a class="dropdown-item" href="Oncology.html">Oncology</a>
+              <a class="dropdown-item" href="orthopedics.html">orthopaedic</a>
+              <a class="dropdown-item" href="Gynecologist.html">Gynecology</a>
+              <a class="dropdown-item" href="dentist.html">Dentistry</a>
+              <a class="dropdown-item" href="ENT.html">ENT</a>
+              <a class="dropdown-item" href="gasteroentrologist.html">Gasteroentrologist</a>
+              <a class="dropdown-item" href="Endocrinologist.html">Endocrinology</a>
+              <a class="dropdown-item" href="Rheumatology.html">Rheumatology</a>
+              <a class="dropdown-item" href="Neurology.html">Neurology</a>
+              <a class="dropdown-item" href="Neurosurgery.html">Neurosurgery</a>
+              <a class="dropdown-item" href="Nephrology.html">Nephrology</a>
+              <a class="dropdown-item" href="neonatology.html">Neonatology</a>
+              <a class="dropdown-item" href="Opthalmology.html">Opthalmology</a>
+              <a class="dropdown-item" href="Pediatrics.html">Pediatrics</a>
+              <a class="dropdown-item" href="plasticsurgery.html">Plastic Surgery</a>
+              <a class="dropdown-item" href="Pulmonology.html">Pulmonology</a>
+              <a class="dropdown-item" href="Psychiatry.html">Psychiatry</a>
+              <a class="dropdown-item" href="Radiology.html">Radiology</a>
+              <a class="dropdown-item" href="urology.html">Urology</a>
+              <a class="dropdown-item" href="Vascularsurgery.html">Vascularsurgery</a>
+
+
+
+
+
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Health Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Medical Glossary</a>
+              <a class="dropdown-item" href="#">Understanding Investigation</a>
+              
+            </div>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#">Patients Rights</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  <!-- navbar  end-->
+
+  <br><br>
+   <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Best cardiologist in Indore</h2> 
+   <hr color="red">
+
+   <br>
+     <!-- Siddharth's card starts  -->
+
+   <div class="dr.siddharth jain">
+    <div class="drphoto">
+        <a href="">
+            <img src="dr.siddharth jain.jpg" alt="" style="display: inline;">
+           
+        </a>
+    </div>
+    <div class="Divdrname">
+        <h2 class="drname">&nbsp; &nbsp; Dr.Siddharth Jain</h2>
+        <p class="medqualification">&nbsp;&nbsp;&nbsp;&nbsp;MBBS, MS(Gen Surgery), M.Ch(Cardio Vascular & Thoracic Surgery)</p>
+        <img class="watermarkspan" src="Hospital LOGO.png" alt="">
+        <span class="Regnum" style="margin-left: 2%;  color: #7a7f89;"> Registraion Number  &nbsp;&nbsp;&nbsp;&nbsp; </span> <span class="Regnum " style="color: #7a7f89;"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Language</span><br>
+        <span class="Regnumval">12819C011 &nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="Regnumval">  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; English,Hindi </span>
+    
+    </div> 
+    <br><br>
+    <div class="experience">
+        <span>
+            <i class="award">
+                <img class="imgaward"   src="award.svg" alt="">
+            </i>
+        </span>
+        <span style="color: #7a7f89;"> &nbsp;9 years of experience overall
+        </span>
+        <br>
+        <br>
+        <div class="location">
+            <span>
+                <i class="loca">
+                    <img class="imglocation"   src="location.svg" alt="">
+                </i>
+            </span>
+            <span style="color: #7a7f89;"> &nbsp;Indore(M.P) Pincode:-452010
+            </span>
+            
+    </div>
+    <hr style="margin-left: 4%; margin-right: 4%;">
+
+    <div class="cardfooter">
+        <span><h6>MON-FRI</h6></span>
+        <span class="drtimings">(7:00PM-10:00PM)</span>
+    </div>
+        
+    <div class="cardbtn">
+        <a href="LoginPageUser.html"><button class="siddharthappointmentbutton">BOOK AN APPOINTMENT</button></a>
+
+    </div>
+
+    <div class="cardbtn">
+        <button class="siddharthreadmore">View more</button>
+
+    </div>
+   </div>
+
+   <!-- Siddharth's card ends  -->
+
+   <!-- Prabal's card ends  -->
+   <div class="dr.prabal sharma">
+    <div class="drphoto">
+        <a href="">
+            <img src="dr.prabal sharma.jpg" alt="" style="display: inline;">
+           
+        </a>
+    </div>
+    <div class="Divdrname">
+        <h2 class="drname">&nbsp; &nbsp; Dr.Prabal Sharma</h2>
+        <p class="medqualification">&nbsp;&nbsp;&nbsp;&nbsp;MBBS, MD(Gen Medicine),DM(Cardiology)</p>
+        <img class="watermarkspan" src="Hospital LOGO.png" alt="">
+        <span class="Regnum" style="margin-left: 2%;  color: #7a7f89;"> Registraion Number  &nbsp;&nbsp;&nbsp;&nbsp; </span> <span class="Regnum " style="color: #7a7f89;"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Language</span><br>
+        <span class="Regnumval">18019C04 &nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="Regnumval">  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; English,Hindi </span>
+    </div> 
+    <br><br>
+    <div class="experience">
+        <span>
+            <i class="award">
+                <img class="imgaward"   src="award.svg" alt="">
+            </i>
+        </span>
+        <span style="color: #7a7f89;"> &nbsp;5 years of experience overall
+        </span>
+        <br>
+        <br>
+        <div class="location">
+            <span>
+                <i class="loca">
+                    <img class="imglocation"   src="location.svg" alt="">
+                </i>
+            </span>
+            <span style="color: #7a7f89;"> &nbsp;Indore(M.P) Pincode:-452010
+            </span>
+            
+    </div>
+    <hr style="margin-left: 4%; margin-right: 4%;">
+
+    <div class="cardfooter">
+        <span><h6>MON-FRI</h6></span>
+        <span class="drtimings">(9:00AM-11:00AM)</span>
+    </div>
+        
+    <div class="cardbtn">
+        <a href="LoginPageUser.html"><button class="siddharthappointmentbutton">BOOK AN APPOINTMENT</button></a>
+
+    </div>
+
+    <div class="cardbtn">
+        <button class="siddharthreadmore">View more</button>
+
+    </div>
+   
+   </div>
+  
+   <!-- Prabal's card ends  -->
+
+
+   <!-- Aniruddh's card starts  -->
+
+ <div class="dr.Aniruddh Trivedi">
+    <div class="drphoto">
+        <a href="">
+            <img src="dr.Aniruddha Trivedi.jpg" alt="" style="display: inline;">
+           
+        </a>
+    </div>
+    <div class="Divdrname">
+        <h2 class="drname">&nbsp; &nbsp; Dr.Aniruddha Trivedi</h2>
+        <p class="medqualification">&nbsp;&nbsp;&nbsp;&nbsp;MBBS, MS(Gen Surgery),DNB(Cardiology)</p>
+        <img class="watermarkspan" src="Hospital LOGO.png" alt="">
+        <span class="Regnum" style="margin-left: 2%;  color: #7a7f89;"> Registraion Number  &nbsp;&nbsp;&nbsp;&nbsp; </span> <span class="Regnum " style="color: #7a7f89;"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Language</span><br>
+        <span class="Regnumval">11016C07 &nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="Regnumval">  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; English,Hindi </span>
+    </div> 
+    <br><br>
+    <div class="experience">
+        <span>
+            <i class="award">
+                <img class="imgaward"   src="award.svg" alt="">
+            </i>
+        </span>
+        <span style="color: #7a7f89;"> &nbsp;12+ years of experience overall
+        </span>
+        <br>
+        <br>
+        <div class="location">
+            <span>
+                <i class="loca">
+                    <img class="imglocation"   src="location.svg" alt="">
+                </i>
+            </span>
+            <span style="color: #7a7f89;"> &nbsp;Indore(M.P) Pincode:-452010
+            </span>
+            
+    </div>
+    <hr style="margin-left: 4%; margin-right: 4%;">
+
+    <div class="cardfooter">
+        <span><h6>MON-FRI</h6></span>
+        <span class="drtimings">(1:00PM-6:00PM)</span>
+    </div>
+        
+    <div class="cardbtn">
+        <a href="LoginPageUser.html"><button class="siddharthappointmentbutton">BOOK AN APPOINTMENT</button></a>
+
+    </div>
+
+    <div class="cardbtn">
+        <button class="siddharthreadmore">View more</button>
+
+    </div>
+   </div>
+
+   <!-- Aniruddh's card ends  -->
+
+   
+   <!-- Nakul's card starts  -->
+
+ <div class="dr.Nakul Mishra">
+    <div class="drphoto">
+        <a href="">
+            <img src="dr.Aniruddha Trivedi.jpg" alt="" style="display: inline;">
+           
+        </a>
+    </div>
+    <div class="Divdrname">
+        <h2 class="drname">&nbsp; &nbsp; Dr.Nakul Mishra</h2>
+        <p class="medqualification">&nbsp;&nbsp;&nbsp;&nbsp;D.M.(Cardiology), M.H.(C.T.C.), A.F.M.C., Pune</p>
+        <img class="watermarkspan" src="Hospital LOGO.png" alt="">
+        <span class="Regnum" style="margin-left: 2%;  color: #7a7f89;"> Registraion Number  &nbsp;&nbsp;&nbsp;&nbsp; </span> <span class="Regnum " style="color: #7a7f89;"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Language</span><br>
+        <span class="Regnumval">11016C07 &nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="Regnumval">  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; English,Hindi </span>
+    </div> 
+    <br><br>
+    <div class="experience">
+        <span>
+            <i class="award">
+                <img class="imgaward"   src="award.svg" alt="">
+            </i>
+        </span>
+        <span style="color: #7a7f89;"> &nbsp;6 years of experience overall
+        </span>
+        <br>
+        <br>
+        <div class="location">
+            <span>
+                <i class="loca">
+                    <img class="imglocation"   src="location.svg" alt="">
+                </i>
+            </span>
+            <span style="color: #7a7f89;"> &nbsp;Indore(M.P) Pincode:-452010
+            </span>
+            
+    </div>
+    <hr class="hrr">
+
+    <div class="cardfooter">
+        <span><h6>MON-FRI</h6></span>
+        <span class="drtimings">(6:00PM-8:00PM)</span>
+    </div>
+        
+    <div class="cardbtn">
+        <a href="LoginPageUser.html"><button class="siddharthappointmentbutton">BOOK AN APPOINTMENT</button></a>
+
+    </div>
+
+    <div class="cardbtn">
+        <button class="siddharthreadmore">View more</button>
+
+    </div>
+   </div>
+ <br> <br><br><br>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+   <!-- Nakul's card ends  -->
+<br><br><br><br>
+<hr color="red" style="margin-top: 20%;">
+
+
+
+
+
+<!-- Footer starts -->
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-geo-alt-fill" viewBox="0 0 16 16" style="color: orange;">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>Vijay Nagar,Indore(M.P) Pincode:-452010 </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-telephone" viewBox="0 0 16 16" style="color: orange;">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span>9993131847</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="bi bi-envelope"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+              class="bi bi-envelope" viewBox="0 0 16 16" style="color: orange;">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>spanhospitals@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="index.html"><img src="/Hospital LOGO1crop.png" class="img-fluid" alt="logo"></a>
+            </div>
+            <div class="footer-text">
+              <p style="word-break: break-all;">Span Hospitals is a leading healthcare institution renowned for its commitment to excellence and
+                patient-centric care. With state-of-the-art facilities and a dedicated team of healthcare
+                professionals, Span Hospitals has established itself as a trusted destination for a wide range of
+                medical services. Their unwavering focus on quality and innovation ensures that patients receive
+                world-class treatment and compassionate care.</p>
+            </div>
+            <div class="footer-social-icon">
+              <span class="follow" style="font-size: 20px;">Follow us on social media</span>
+              <span class="socialmediaiconfooter"><br>
+                <a href="https://www.facebook.com/virat.kohli/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/imVkohli?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footerwidget-heading">
+              <h3 style="color: #fff;">Centres of Excellence</h3>
+              <hr style="background-color: orange; margin-right: 18%;">
+            </div>
+            <ul>
+              <li><a href="Cardiology.html">Cardiology</a></li>
+              <li><a href="Founders.html">About us</a></li>
+              <li><a href="Oncology.html">Oncology</a></li>
+              <li><a href="Founder.html">Contacts Us</a></li>
+              <li><a href="orthopedics.html">Orthopaedics</a></li>
+              <li><a href="Founder.html">Our teams </a></li>
+              <li><a href="gasteroentrologist.html">Gastroenterology</a></li>
+              <li><a href="Blogs.html">Blog</a></li>
+              <li><a href="Gynecologist.html">gynecology</a></li>
+              <li><a href="#">Admin Login</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Any complaint/Contact Us?</h3>
+              
+            </div>
+            <div class="footer-text mb-25">
+              <p></p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#">
+                <input type="text" name="Fullname" id="Fname" placeholder="Name">
+                <br> <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+              
+                <textarea name="message" id="message" cols="50" rows="5" placeholder="Message"></textarea>
+                <input type="submit" id="submit" value="submit" style="background-color: #007291;">
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2018, All Right Reserved <a href="">SNAP Hospitals</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="index.htm">Home</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#footer-section">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+</html>

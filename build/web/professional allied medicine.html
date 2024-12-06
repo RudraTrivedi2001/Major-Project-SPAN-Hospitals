@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style>
+        .follow {
+
+            color: #fff !important;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-right: 4px;
+        }
+
+        .fa {
+
+            font-size: 14px;
+
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            margin: 5px;
+            margin-left: 8px;
+
+        }
+
+        .Privacypolicy {
+            color: #fff !important;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-right: 0px;
+            margin-left: -2%;
+        }
+
+        .Askspan {
+            color: #fff !important;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: -19px;
+        }
+
+        .Disclamer {
+            color: #fff !important;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            margin-left: -19px;
+        }
+
+        /* Add a hover effect if you want */
+        /* .fa:hover {
+  opacity: ;
+} */
+
+        /* Set a specific color for each brand */
+
+        /* Facebook */
+        .fa-facebook {
+            background: #007C9D;
+            color: #fff;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #007C9D;
+            color: #fff;
+        }
+
+        .fa-instagram {
+            background: #007C9D;
+            color: #fff;
+        }
+
+        .fa-linkedin {
+            background: #007C9D;
+            color: #fff;
+        }
+
+        .fa-youtube {
+            background: #007C9D;
+            color: #fff;
+        }
+
+        .navvmain {
+
+            margin-top: -15px;
+            background-color: #fff;
+            color: white;
+        }
+
+        .navbar navbar-light bg-light {
+
+            background-color: white;
+            color: white;
+        }
+
+        .pagination {
+
+            margin-left: 38%;
+
+        }
+
+        .ImgHeader {
+            opacity: 0.1;
+
+            height: 350px;
+            width: 2000px;
+
+        }
+
+        .Medicalglossary {
+            margin-left: 38%;
+            color: #237d9e;
+            font-size: 22px;
+            text-transform: uppercase;
+            padding-bottom: 24px;
+        }
+
+        .page-item a:hover {
+            background: #237d9e;
+        }
+
+        .FAQA {
+
+            margin-left: 38.7%;
+        }
+
+        .que {
+            font-weight: bold;
+
+            margin-bottom: 8px;
+            font-size: 17px;
+            margin-top: 24px;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .investigationimg {
+
+            margin-left: 39%;
+            width: 100%;
+            height: auto;
+            margin-top: 76px;
+        }
+
+        .tbl {
+
+            margin-left: 39%;
+            margin-top: 1%;
+        }
+
+        .Th {
+            background-color: #237d9e;
+            color: #fff;
+            width: 87%;
+        }
+
+        .Th1 {
+            background-color: #237d9e;
+            color: #fff;
+
+        }
+
+        td {
+            padding-bottom: 4px;
+            padding-top: 4px;
+        }
+
+        .bar {
+            width: 100%;
+            height: 68px;
+            background-color: #ECFBFE;
+            margin-left: 0%;
+            margin-bottom: 10%;
+
+        }
+
+        .bar h5 {
+            font-size: 39px;
+            font-weight: 600;
+            line-height: 1.9;
+            padding-top: -2px;
+            /* padding-left: 58%;
+      padding-top: 10px; */
+            color: #007C9D;
+        }
+
+        .bar h5:hover {
+
+            cursor: pointer;
+            color: #FFD700;
+
+        }
+
+        .empanelmentsimg {
+
+            float: right;
+            margin-right: 11%;
+
+        }
+
+        .emplist li {
+            margin-left: 10%;
+            font-family: Sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.9;
+        }
+
+        .gflist1 {
+            float: left;
+            margin-left: 7%;
+            margin-right: 4%;
+            font-family: Sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.9;
+        }
+
+        .gflist2 {
+            float: left;
+            margin-right: 4%;
+            font-family: Sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.9;
+        }
+
+        .gflist3 {
+            margin-left: 1;
+            margin-right: 5%;
+            line-height: 1.9;
+            font-family: Sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .para {
+            font-size: 20px;
+            margin-left: 4%;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footer-section {
+            background: #0a2351;
+            position: relative;
+        }
+
+        .footer-cta {
+            border-bottom: 1px solid #373636;
+        }
+
+        .single-cta i {
+            color: #ff5e14;
+            font-size: 30px;
+            float: left;
+            margin-top: 8px;
+        }
+
+        .cta-text {
+            padding-left: 15px;
+            display: inline-block;
+        }
+
+        .cta-text h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .cta-text span {
+            color: #757575;
+            font-size: 15px;
+        }
+
+        .footer-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-pattern img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 330px;
+            background-size: cover;
+            background-position: 100% 100%;
+        }
+
+        .footer-logo {
+            margin-bottom: 30px;
+        }
+
+        .footer-logo img {
+            max-width: 200px;
+        }
+
+        .footer-text p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: #7e7e7e;
+            line-height: 28px;
+        }
+
+        /* .footer-social-icon span {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+    } */
+
+        /* .footer-social-icon a {
+      color: #fff;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+
+    .footer-social-icon i {
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 38px;
+      border-radius: 50%;
+    } */
+
+        .facebook-bg {
+            background: #3B5998;
+        }
+
+        .twitter-bg {
+            background: #55ACEE;
+        }
+
+        .google-bg {
+            background: #DD4B39;
+        }
+
+        .footer-widget-heading h3 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .footer-widget-heading h3::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            height: 2px;
+            width: 50px;
+            background: #ff5e14;
+        }
+
+        .footer-widget ul li {
+            display: inline-block;
+            float: left;
+            width: 50%;
+            margin-bottom: 12px;
+        }
+
+        .footer-widget ul li a:hover {
+            color: #ff5e14;
+        }
+
+        .footer-widget ul li a {
+            color: #878787;
+            text-transform: capitalize;
+        }
+
+        .subscribe-form {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subscribe-form input {
+            width: 100%;
+            padding: 14px 28px;
+            background: #2E2E2E;
+            border: 1px solid #2E2E2E;
+            color: #fff;
+        }
+
+        .subscribe-form button {
+            position: absolute;
+            right: 0;
+            background: #ff5e14;
+            padding: 13px 20px;
+            border: 1px solid #ff5e14;
+            top: 0;
+        }
+
+        .subscribe-form button i {
+            color: #fff;
+            font-size: 22px;
+            transform: rotate(-6deg);
+        }
+
+        .copyright-area {
+            background: #202020;
+            padding: 25px 0;
+        }
+
+        .copyright-text p {
+            margin: 0;
+            font-size: 14px;
+            color: #878787;
+        }
+
+        .copyright-text p a {
+            color: #ff5e14;
+        }
+
+        .footer-menu li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .footer-menu li:hover a {
+            color: #ff5e14;
+        }
+
+        .footer-menu li a {
+            font-size: 14px;
+            color: #878787;
+        }
+
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top header -->
+    <div id="header" style="background-color:#007C9D;">
+        <hr>
+
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="follow">Follow us on social media</span>
+        <span class="socialmediaicon">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <a class="Privacypolicy" href="">
+            <span style="color: white;">
+                Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;|
+            </span>
+        </a>
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+        <a class="Disclamer">
+            <span style="color: white"> Disclamer &nbsp;&nbsp;&nbsp;&nbsp;| </span>
+        </a>
+
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+
+        <a class="Askspan">
+            <span style="color: white;">
+                Ask Span
+
+            </span>
+        </a>
+        &nbsp;&nbsp;
+        &nbsp;&nbsp;
+
+
+        <br><br>
+    </div>
+
+    </div>
+    <br>
+    <!-- Top header -->
+    <!-- Second header -->
+
+    <div id="header02">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #666;"> &#10003</span>
+        <span style="color: #4b4141">Medical Emergency</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #666;">&#128666;</span>
+        <span style="color: #666;">ICU on Wheels</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #666;"> &#128167;</span>
+        <span style="color: #5a5a5a;">Blood Bank</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>
+            &#128222; </span>
+        <span style="color: #5a5a5a;"> &nbsp;Pharmacy</span> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #5a5a5a;">0731-4733251</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #666;">0731-4733260</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <span style="color: #666;">0731-4733252</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #666;">0731-4733269</span>
+        <hr style="color: #6e222e;">
+
+        <!-- Second header end -->
+        <!-- navbar start-->
+        <!-- Just an image -->
+
+        <div>
+            <!-- <nav class="navbar navbar-light bg-light">
+    
+  </nav> -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="/Hospital LOGO1crop.png" height="80px" alt="">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Vision</a>
+                                <a class="dropdown-item" href="#">Doctor with us</a>
+                                <a class="dropdown-item" href="#">Beginning</a>
+                                <a class="dropdown-item" href="#">Our Assests</a>
+                            </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hospital Information
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Our Scope Of Services</a>
+                                <a class="dropdown-item" href="#">Departments</a>
+                                <a class="dropdown-item" href="#">Empanelments</a>
+                                <a class="dropdown-item" href="#">Cashless Mediclam Facility</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Patient Care
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Find a Doctor </a>
+                                <a class="dropdown-item" href="#">Apollo Surgery-Assured Price </a>
+                                <a class="dropdown-item" href="#">Clinical Outcomes </a>
+                                <a class="dropdown-item" href="#"> Service Excellence </a>
+                                <a class="dropdown-item" href="#">Patient Testimonials </a>
+                                <a class="dropdown-item" href="#">Value added services </a>
+                                <a class="dropdown-item" href="#">Health and lifestyle </a>
+                                <a class="dropdown-item" href="#">Pay Online </a>
+                                <a class="dropdown-item" href="#">Medical Feed </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Centres of Excellence
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Health Information
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <!-- navbar  end-->
+
+        <!-- Header image starts -->
+        <img class="ImgHeader" src="breadcrumb-2.jpg" alt="">
+
+        <!-- Header image ends -->
+        <br><br><br><br>
+        <!-- Speciality bar green starts -->
+        <div class="speciality" id="speciality">
+            <div class="bar">
+                <center>
+                    <h5>Professional Allied to Medicine</h5>
+                </center>
+            </div>
+            <!-- Speciality bar green ends -->
+
+            <!-- Empanelmentsdivision starts -->
+
+            <div class="Empanelmentsdivision">
+
+                <img src="professional allied medicine.png" alt="" class="empanelmentsimg" width="400" height="auto" style="margin-top: -2%;">
+
+
+            </div>
+
+            <div class="para">
+                <!-- <h2 style="margin-bottom: 2%;">Pharmacy</h2> -->
+                <p>Allied Health Professions are a distinct group of health professionals who apply their expertise to
+                    prevent disease transmission, diagnose, treat and rehabilitate people of all ages and all
+                    specialties. Together with a range of technical and support staff they may deliver direct patient
+                    care, rehabilitation, treatment, diagnostics and health improvement interventions to restore and
+                    maintain optimal physical, sensory, psychological, cognitive and social functions.</p>
+                <!-- <h2 style="margin-bottom: 2%;">Support Services (Ambulance)</h2>
+                <p>An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such
+                    as hospitals. Typically, out-of-hospital medical care is provided to the patient.</p> -->
+
+                <br><br> <br>
+
+                <hr>
+
+                <p>At SPAN we provide the best laboratory Services i.e. given below</p>
+                <div style="width: 400px; ">
+                    <!-- <h4>Pharmacy</h4> -->
+                    <ul style="margin-left: 5%;">
+                        <li><b>Dietetics</b></li>
+                        <li><b>Occupational Therapy</b></li>
+                        <li><b>Physiotherapy</b></li>
+                        <!-- <li><b></b></li> -->
+                    </ul>
+
+
+                </div>
+                <div style="width: 200px; margin-left: 60% ; margin-top: -5%;">
+                    <!-- <h4>Support Services</h4> -->
+                    <ul style="margin-left: 5%;">
+                        <li><b>Psychology</b></li>
+                        <li><b>Speech and Language Therapy</b></li>
+                        <!-- <li><b>Histopathology</b></li> -->
+                    </ul>
+
+                    <br><br>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Group Facilities bar green ends -->
+
+            <!-- Mediclaim starts 
+            <br><br><br><br>
+            <div class="speciality" id="Mediclaim">
+                <div class="bar">
+                    <center>
+                        <h5>Cashless Mediclaim Facility Available</h5>
+                    </center>
+
+                </div>
+            </div> -->
+
+
+
+            <!-- Mediclaim ends  -->
+
+
+            <!-- Footer starts -->
+
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16" style="color: orange;">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-telephone" viewBox="0 0 16 16" style="color: orange;">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="bi bi-envelope"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-envelope" viewBox="0 0 16 16" style="color: orange;">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                    </svg>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <span>spanhospitals@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="/Hospital LOGO1crop.png" class="img-fluid"
+                                                alt="logo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p style="word-break: break-all;">Span Hospitals is a leading healthcare
+                                            institution renowned for its commitment to excellence and
+                                            patient-centric care. With state-of-the-art facilities and a dedicated team
+                                            of healthcare
+                                            professionals, Span Hospitals has established itself as a trusted
+                                            destination for a wide range of
+                                            medical services. Their unwavering focus on quality and innovation ensures
+                                            that patients receive
+                                            world-class treatment and compassionate care.</p>
+                                    </div>
+                                    <div class="footer-social-icon">
+                                        <span class="follow" style="font-size: 20px;">Follow us on social media</span>
+                                        <span class="socialmediaiconfooter"><br>
+                                            <a href="#" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-linkedin"></a>
+                                            <a href="#" class="fa fa-youtube"></a>
+                                            <a href="#" class="fa fa-instagram"></a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Centres of Excellence</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Cardiology</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Oncology</a></li>
+                                        <li><a href="#">Contacts Us</a></li>
+                                        <li><a href="#">Orthopaedics</a></li>
+                                        <li><a href="#">Our teams </a></li>
+                                        <li><a href="#">Gastroenterology</a></li>
+                                        <li><a href="#">gynecology</a></li>
+                                        <li><a href="#">gynecology</a></li>
+                                        <li><a href="#">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Subscribe</h3>
+                                    </div>
+                                    <div class="footer-text mb-25">
+                                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    </div>
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Email Address">
+                                            <button><i class="fab fa-telegram-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2018, All Right Reserved <a
+                                            href="https://codepen.io/anupkumar92/">SNAP Hospitals</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Terms</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Policy</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- footer ends -->
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+GlassFish Server 3.1.2.2
+MySQL Connector 5.1.12
+MySQL Database 8.0.28
+JDK 7
+JRE 1.7

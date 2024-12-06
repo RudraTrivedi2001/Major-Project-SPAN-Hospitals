@@ -1,0 +1,10 @@
+set name=fmri value=pkg:/glassfish-upgrade-l10n@3.1.2,0-18:20120205T223742Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish Upgrade Tool (asupgrade) which is a utility to migrate the server configuration, its persisted state, Java EE services, and deployed Java EE applications from a previously installed GlassFish application server to the present GlassFish application server. GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Upgrade Tool Localization"
+depend fmri=pkg:/glassfish-upgrade@3.1 type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=nobody path=glassfish
+dir group=sys mode=0755 owner=nobody path=glassfish/lib
+file 0b1bd320c8ff6d59a210cccbfc38c09fdd6fff1a chash=24c0bfb1bdae769e4713d08fdca5364db4cfab92 group=sys mode=0644 owner=nobody path=glassfish/lib/upgrade-tool-l10n.jar pkg.csize=170313 pkg.size=218965
+set name=publisher value=stable.glassfish.org

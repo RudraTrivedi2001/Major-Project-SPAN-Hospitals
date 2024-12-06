@@ -1,0 +1,6 @@
+file aded192902944482d8e33d8b5c941d61e113475b chash=7e5365586bf0bd3dcdd19964475ee43ae050ab65 group=sys mode=0644 owner=nobody path=glassfish/modules/console-common-l10n.jar pkg.csize=2625505 pkg.size=2834654
+file a1e58e37a0d0fe161239f8bd30d1219cdc4efdd1 chash=c7d42976dcc2e1766ac0eeb1e27913675b83f575 group=sys mode=0644 owner=nobody path=glassfish/modules/console-community-branding-plugin-l10n.jar pkg.csize=40346 pkg.size=42889
+file 4afef21d49e9cb5540c9426343023520d4c4fa31 chash=fffe0eb7386eda7c92cc60d13909393d757e7bba group=sys mode=0644 owner=nobody path=glassfish/modules/console-core-l10n.jar pkg.csize=176933 pkg.size=178948
+file 3b8dd3fa8b71567fe73350e639ac733f9adc04d6 chash=14b1fb9e7e555146813fdd07572f618f5ed0aea6 group=sys mode=0644 owner=nobody path=glassfish/modules/console-updatecenter-plugin-l10n.jar pkg.csize=35813 pkg.size=38262
+file 0ab0783e05fe1cb35f7512defe7cf0a85f951d3d chash=8ebf91cf0b32c11ab007d5da875d75f68a8da28d group=sys mode=0644 owner=nobody path=glassfish/modules/webui-jsf-plugin-l10n.jar pkg.csize=55812 pkg.size=63216
+file f63c4ee6bc24d0ace1800647b1baf7eba7ceee72 chash=9a4a2b2adb90edc86234c5d2966192aac61a893b group=sys mode=0644 owner=nobody path=glassfish/modules/webui-jsf-suntheme-plugin-l10n.jar pkg.csize=139427 pkg.size=214537

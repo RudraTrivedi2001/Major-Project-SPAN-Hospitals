@@ -1,0 +1,23 @@
+set name=fmri value=pkg:/glassfish-common-l10n@3.1.2,0-18:20120205T223613Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish common utilities and components.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Common Components Localization"
+depend fmri=pkg:/glassfish-common@3.1 type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=nobody path=glassfish
+dir group=sys mode=0755 owner=nobody path=glassfish/modules
+file e9ce830f8a2c7299e808c97ab8d3f6bb893ed9c9 chash=226d82197cb177d006c63cdf878917d5c0173513 group=sys mode=0644 owner=nobody path=glassfish/modules/admin-util-l10n.jar pkg.csize=122190 pkg.size=134533
+file cf15344469143234ac38e78cedc0378633d2a218 chash=ff002705457bf008f0bc3f71cda0751c7a6bbec2 group=sys mode=0644 owner=nobody path=glassfish/modules/annotation-framework-l10n.jar pkg.csize=13291 pkg.size=15712
+file 2e4c4c041a0324ec039560813c44316e02ff4041 chash=c0d729e51f7e3c2795ab0aa9834f336212079a70 group=sys mode=0644 owner=nobody path=glassfish/modules/cli-optional-l10n.jar pkg.csize=256422 pkg.size=275862
+file 6ffd7814719a361ebbf4d4ecd6a26c5a09f9334e chash=d68820e334739e6b25dd17f65cf34b6bde38273a group=sys mode=0644 owner=nobody path=glassfish/modules/container-common-l10n.jar pkg.csize=41360 pkg.size=48166
+file 7982b17e90f243dbd2b569fba98c6673d5b7fc74 chash=5a149e54663d7a7d4472710ecdc8372baadcb9d6 group=sys mode=0644 owner=nobody path=glassfish/modules/deployment-client-l10n.jar pkg.csize=103980 pkg.size=111098
+file 9f95d97e5c796da070be786460a7202b78a3052c chash=ac24c75e9983f1b4ed15692012dcd354f20030cd group=sys mode=0644 owner=nobody path=glassfish/modules/deployment-javaee-core-l10n.jar pkg.csize=29335 pkg.size=34824
+file 0e5e193369aa7450484a761df5d7bce01ebb2283 chash=74af0713ded1d8a6f1a95ccbbc4d9fee8650f629 group=sys mode=0644 owner=nobody path=glassfish/modules/deployment-javaee-full-l10n.jar pkg.csize=12424 pkg.size=15466
+file f41f12a14476e67c8919039b2fdde3c133e4cc44 chash=62db7572d3098adbef10626c3923b552e2f57aa2 group=sys mode=0644 owner=nobody path=glassfish/modules/dol-l10n.jar pkg.csize=189839 pkg.size=203795
+file 730343cb8c0e3ddf26de63b1d9e53049a538fc74 chash=00d9f47334dbdb7a335dedac1ae10e2c0c8e5356 group=sys mode=0644 owner=nobody path=glassfish/modules/glassfish-naming-l10n.jar pkg.csize=12852 pkg.size=15581
+file 8b87a8b8617dc4b12ef0088b789aaf4340c4c865 chash=e18ed6e8013383b175b7f577a0040f9cf146e05a group=sys mode=0644 owner=nobody path=glassfish/modules/gms-bootstrap-l10n.jar pkg.csize=12564 pkg.size=15317
+file 0f3b7b7274b50482c8c013d4fdc451d1a8707bb5 chash=f64c852815ae87b1b3a87794b5a6c37542b44ff2 group=sys mode=0644 owner=nobody path=glassfish/modules/monitoring-core-l10n.jar pkg.csize=39495 pkg.size=50604
+file 5005c4a2f3f2bf9b5bf703176b2f5f878e625636 chash=a0d5dce8bcf33e70d061835273521a915425166a group=sys mode=0644 owner=nobody path=glassfish/modules/orb-connector-l10n.jar pkg.csize=37925 pkg.size=45596
+file 5a755dd68332f783127d7ebd490fcf99635285e7 chash=a887949b967313eb60149ded0e6b58e37f134d29 group=sys mode=0644 owner=nobody path=glassfish/modules/security-l10n.jar pkg.csize=402251 pkg.size=467557
+file 8a88e0b075203c2d7eb07b2b0452c62bea7ea5d3 chash=8923c1b1024e19d8c163fe009de3e6ccadc5c938 group=sys mode=0644 owner=nobody path=glassfish/modules/server-mgmt-l10n.jar pkg.csize=155410 pkg.size=161033
+set name=publisher value=stable.glassfish.org

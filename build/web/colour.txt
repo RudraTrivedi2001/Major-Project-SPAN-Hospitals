@@ -1,0 +1,2 @@
+#007C9D primary
+#025c74 on hover navbar

@@ -1,0 +1,11 @@
+set name=fmri value=pkg:/glassfish-ejb-lite-l10n@3.1.2,0-18:20120205T223625Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localiztion of the  EJB Lite Container.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish EJB Lite Container Localization"
+depend fmri=pkg:/glassfish-ejb-lite@3.1 type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=nobody path=glassfish
+dir group=sys mode=0755 owner=nobody path=glassfish/modules
+file f7baff66396255d716fb803cf5edb73b236612c7 chash=f1aad016d63069879b9c387ceee1ffb7dec21676 group=sys mode=0644 owner=nobody path=glassfish/modules/console-ejb-lite-plugin-l10n.jar pkg.csize=127073 pkg.size=141163
+file 6d87e7b8458af57a60230e27cc7a03c164311a6a chash=c3b19c88b3fa53039d320c99aeedbc4c30184580 group=sys mode=0644 owner=nobody path=glassfish/modules/ejb-container-l10n.jar pkg.csize=92920 pkg.size=104967
+set name=publisher value=stable.glassfish.org

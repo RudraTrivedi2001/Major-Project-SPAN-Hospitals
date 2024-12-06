@@ -1,0 +1,12 @@
+set name=fmri value=pkg:/glassfish-web-l10n@3.1.2,0-18:20120205T223759Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Localization of GlassFish web container runtime module. GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Web Container Localization"
+depend fmri=pkg:/glassfish-web@3.1 type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=nobody path=glassfish
+dir group=sys mode=0755 owner=nobody path=glassfish/modules
+file 417551630443974ed3c10ab7abd32a9c81352c5e chash=6309a874c7dee241fd0578a98e8ca42fff76a8d8 group=sys mode=0644 owner=nobody path=glassfish/modules/console-web-plugin-l10n.jar pkg.csize=1140328 pkg.size=1217908
+file a73c5476733a94df67b1b294e76c10dad6c8760e chash=a03109fe6cff791cd01a03522c62014927a63811 group=sys mode=0644 owner=nobody path=glassfish/modules/web-cli-l10n.jar pkg.csize=296661 pkg.size=335986
+file d130b465e17d5011deb13ecd9207cf8077cfc0a8 chash=df30b76ed41a30210d86a0f09c4d679d1167eee4 group=sys mode=0644 owner=nobody path=glassfish/modules/web-gui-plugin-common-l10n.jar pkg.csize=106431 pkg.size=118311
+set name=publisher value=stable.glassfish.org

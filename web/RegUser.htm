@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*
+        {
+            padding: 0px;
+            text-align: center;
+        }
+        .container {
+            padding: 16px;
+           
+        }
+        h2{
+            margin-top: 4px;
+            font-family: -apple-ystem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            
+        
+        }
+        .logo
+        {
+            width:250px;
+            height:220px;
+            vertical-align: middle;
+        
+        }
+        .Registration
+        {
+            margin: auto;
+            width: 550px;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            border: 1px solid rgba(0,0,0.1);
+            box-shadow: 0 5px 10px rgba(0,0,0.2);
+        }
+        input[type=text],input[type=tel],input[type=email], input[type=password], input[type=date],select{
+            width:400px;
+            border: none;
+            padding:12px 20px  ;
+            text-align: left;
+            margin:5px 0px;
+            display: inline-block;
+            border:1px solid blue;
+            border-radius: 5px;
+            
+        }
+        input[type=Submit]
+        {
+            width: 300px;
+            padding: 14px 20px; 
+            background-color:#4CAF50;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            color:#000;
+            font-weight: bold;
+            font-variant: small-caps;
+            border-radius: 1em;
+        }
+       
+        div  label{    
+            font-weight: bolder;
+            padding: 3px;
+            margin: 0px ;
+            text-align: left;
+        
+        }
+        select:focus,input[type=tel]:focus,input[type=text]:focus,input[type=email]:focus, input[type=password]:focus, input[type=date]:focus{
+            border: 2px solid blue;
+        }
+        input[type=radio]
+        {
+            margin-left:10px ;
+            display: inline-table;
+        }
+        
+        </style>
+        </style>
+</head>
+<body>
+    
+<body>
+    <div class="Registration">
+      <h2> REGISTER HERE..</h2>
+      <div class="container">
+          <form action="uploaduser.jsp" method="post">
+          <img class="logo" src="Hospital LOGO.png" alt="Logo">
+          <br>
+          <br>
+          <label style="text-align: left;">Full Name:</label><br>
+          <input type="text" name="name" placeholder="Name.." required>
+          <br>
+          <label>Email:</label> <br>
+          <input type="email" name="email" placeholder="Email Address.." required>
+          <br>
+          <label>Date of Birth:</label><br>
+          <input type="date" name="dob" required><br>
+          <br>
+  
+          
+          <br>
+          <label>Phone Number:</label><br>
+          <input type="tel" name="phone" placeholder="Enter Phone Number..">
+          <br>
+          <label>Password: </label> <br>
+          <input type="password" name="password" placeholder="Password" required>
+          <br>
+          <label>Confirm Password: </label> <br>
+          <input type="password" name="" placeholder="Confirm Password" required>
+          <br>
+          <input type="checkbox" required> I agree to Terms & Conditions<br>
+          <input type="Submit" value="REGISTER" id="register">
+  
+      </div>
+      </form>
+  
+    </div>
+</body>
+</html>

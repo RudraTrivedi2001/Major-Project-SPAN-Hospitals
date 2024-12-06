@@ -1,0 +1,7 @@
+file a1f645fc38f430f9822ee3344e01e0a9363121d4 chash=9b0863871cbe5ae71ce7a9f8d120ff9f69f2d8f4 group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-ejb-mapping-l10n.jar pkg.csize=35897 pkg.size=38653
+file ed5742d68f3a108b920f04ce208a4186a4e6e8bf chash=2d140e8feb62348d62773fa497ea99b4c1552676 group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-enhancer-l10n.jar pkg.csize=21952 pkg.size=24580
+file c1144a4c5e4fc16839c7f79f86e53574f218e952 chash=673062c222aec0123dfd345315048215ff58a1c4 group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-generator-database-l10n.jar pkg.csize=21594 pkg.size=24607
+file 8d743abb710fd14815f7e83bcf04102f071d3941 chash=99cbd74f216dfab9a45baaff486d0ab36b62c624 group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-model-l10n.jar pkg.csize=64997 pkg.size=67398
+file d5afc22c2a49ebf63865e16ec0bac9116ac083f3 chash=26495354f48a75082693c7f363bc91e4b82dcedc group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-support-ejb-l10n.jar pkg.csize=168081 pkg.size=178052
+file f1c9019c93b5401ddfe04a762c6298aaa0e8e671 chash=5ec8e663c2cfdbe0c2ab87d8c4c1d9136449b72d group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-support-sqlstore-l10n.jar pkg.csize=218917 pkg.size=231449
+file 4a887d382eff3d0a42fbb9c7d3c66211743953f1 chash=86555d21c424fd5d282283b651d3bc20a59d9a19 group=sys mode=0644 owner=nobody path=glassfish/modules/cmp-utility-l10n.jar pkg.csize=41091 pkg.size=48604

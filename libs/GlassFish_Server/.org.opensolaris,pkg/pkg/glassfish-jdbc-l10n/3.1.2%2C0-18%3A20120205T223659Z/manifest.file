@@ -1,0 +1,2 @@
+file 625fa22c9b4107a0622bc3b4b8f4048d6e35e7a9 chash=817ffdcd385f2d4790a46dc98a7024c3a7541d9f group=sys mode=0644 owner=nobody path=glassfish/modules/console-jdbc-plugin-l10n.jar pkg.csize=471919 pkg.size=505185
+file 07a29c0d37b65b739c34a4b7ed9daea1a2c81411 chash=823f8b1237142d508fe27a7c15ed8b78e7f45f35 group=sys mode=0644 owner=nobody path=glassfish/modules/jdbc-admin-l10n.jar pkg.csize=189735 pkg.size=200930
