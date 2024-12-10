@@ -40,4 +40,4 @@ This repository contains the source code for **Span Hospitals**, a comprehensive
 1. **Clone the Repository**  
    ```bash
    git clone https://github.com/RudraTrivedi2001/Major-Project-SPAN-Hospitals.git
-   cd Span-Hospitals
+   
